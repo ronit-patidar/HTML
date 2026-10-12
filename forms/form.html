@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form tag is used to collect info from user -->
+    <!-- action="submit.php" means data is sent to backend file -->
+
+    <form target="_blank" action="submit.php" method="POST">
+      <label for="id1">Name :</label>
+      <input
+        id="id1"
+        name="username"
+        type="text"
+        placeholder="Enter your name" 
+        required
+      /><br /><br />
+
+      <label for="id2">Email :</label>
+      <input
+        id="id2"
+        name="email"
+        type="email"
+        placeholder="Enter your Email"
+      /><br /><br />
+
+      <label>Gender :</label>
+      <input id="male" type="radio" name="gender" value="male" />
+      <label for="male">Male</label>
+
+      <input id="female" type="radio" value="female" name="gender" />
+      <label for="female">Female</label><br /><br />
+
+      <label for="id4">City:</label>
+      <select name="City" id="id4">
+        <option value="Bhopal">Bhopal</option>
+        <option value="Indore">Indore</option>
+        <option value="Pune">Pune</option>
+        <option value="Bangalore">Banglore</option></select
+      ><br /><br />
+      <label for="id5">Feedback : </label><br />
+      <textarea
+        name="feedback"
+        id="id5"
+        placeholder="Feedback"
+        rows="3"
+        cols="26"
+      ></textarea
+      ><br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

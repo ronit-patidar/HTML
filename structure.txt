@@ -1,0 +1,8 @@
+HTML(hypertext markup language)
+it is used to provide structuce and layout of webpages.
+
+CSS (cascading style sheet )
+it is used to describe the style of document.
+
+JS(javascript)
+logic

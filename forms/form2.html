@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <form action="#" method="POST">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <!-- FULLNAME -->
+        <label for="fullName">FullName :</label>
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          placeholder="Enter your fullname"
+          required
+          minlength="3"
+          autofocus
+        />
+        <br /><br />
+
+        <!-- Date -->
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date" required />
+        <br /><br />
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <input id="male" type="radio" name="gender" value="Male" />
+        <label for="male">Male</label>
+
+        <input id="female" type="radio" name="gender" value="Female" />
+        <label for="female">Female</label>
+
+        <input id="other" type="radio" name="gender" value="Other" />
+        <label for="other">Other</label>
+        <br /><br />
+
+        <!-- Profile Picture -->
+        <label for="profilePic">Profile Picture:</label>
+        <input type="file" id="profilePic" name="profilePic" accept="image/*" />
+        <br /><br />
+
+        <!-- Bio -->
+        <label for="bio">Bio :</label>
+        <br /><br />
+        <textarea
+          name="bio"
+          id="bio"
+          maxlength="200"
+          placeholder="Enter your details"
+          rows="3"
+          cols="40"
+        ></textarea>
+        <br /><br />
+
+        <!-- Phone Number -->
+        <label for="phone">Enter your Phone No :</label>
+        <input type="tel" pattern="[0-9]{10}" id="phone" name="phone" required />
+        <br /><br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Account Information</legend>
+
+        <!-- EMAIL -->
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+          required
+        />
+        <br /><br />
+
+        <!-- PASSWORD -->
+        <label for="password">Password:</label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          placeholder="Enter password"
+          minlength="6"
+          required
+        />
+        <br /><br />
+
+        <!-- CONFIRM PASSWORD -->
+        <label for="confirmPassword">Confirm Password:</label>
+        <input
+          id="confirmPassword"
+          type="password"
+          name="confirmPassword"
+          placeholder="Confirm password"
+          minlength="6"
+          required
+        />
+        <br /><br />
+
+        <!-- Course-->
+        <label for="course">Course : </label>
+        <select name="course" id="course">
+          <option value="BCA">BCA</option>
+          <option value="B.Tech" selected>B.Tech</option>
+          <option value="MCA">MCA</option>
+          <option value="MBA">MBA</option>
+        </select>
+        <br /><br />
+
+        <!-- Hobby -->
+        <label>Hobby :</label>
+        <input type="checkbox" id="reading" name="hobby" value="reading" />
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="coding" name="hobby" value="coding" />
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="playing" name="hobby" value="playing" />
+        <label for="playing">Playing</label>
+        <br /><br />
+      </fieldset>
+
+      <br />
+
+      <!-- Hidden field -->
+      <input type="hidden" name="formType" value="registration" />
+
+      <!-- Terms and condition -->
+      <input type="checkbox" id="terms" name="terms" required />
+      <label for="terms">I agree to the terms and conditions</label>
+      <br /><br />
+
+      <!-- Submit and Reset -->
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+
+    </form>
+  </body>
+</html>
